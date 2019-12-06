@@ -1,0 +1,41 @@
+
+/* Mobile responsive */
+#juandiego_portrait {
+    width: 100%;
+}
+
+nav {
+    display: flex;    
+    justify-content: space-around;
+    background-color: black;
+}
+
+nav li a {
+    color: white;
+    display: inline;
+    text-decoration: none;      
+}
+nav ul {
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    margin: 2vw; 
+    list-style-type: none;   
+}
+
+
+@media only screen and (min-width:500px) {
+
+
+    /* Desktop responsive */
+
+
+body {
+    background-color: red;
+}
+
+} 
