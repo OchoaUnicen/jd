@@ -171,16 +171,19 @@ body {font-family: "Lato", sans-serif}
       </div>
       <div class="w3-col m6">
         <form action="/action_page.php" target="_blank">
+          <label>Sexo</label>
+          <p>Hombre <input type="radio" name="sexo" value="hombre"> Mujer <input type="radio" name="sexo" value="mujer"></p>
           <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            
             <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+              <input id="input_nombre" class="w3-input w3-border" type="text" placeholder="Nombre" required name="Name">
             </div>
             <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+              <input id="input_email" class="w3-input w3-border" type="email" placeholder="Email" required name="Email">
             </div>
           </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+          <input id="input_mensaje" class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button id="boton_enviar" class="w3-button w3-black w3-section w3-right" type="submit">Enviar Consulta</button>
         </form>
       </div>
     </div>
@@ -240,5 +243,8 @@ window.onclick = function(event) {
 }
 </script>
 
+
+
+<script type="text/javascript" src="js/enviar_datos_formulario.js"></script>
 </body>
 </html>
